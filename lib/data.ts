@@ -92,9 +92,9 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'MTI Electronics',
+        title: 'Crypton AI',
         slug: 'mti-electronics',
-        liveUrl: 'https://mti-electronics.vercel.app/',
+        liveUrl: 'https://cryptotrend-ai.vercel.app/',
         year: 2025,
         description: `
       A complete agency portfolio platform built for MTI Electronics to showcase their services, blog content, and product offerings. <br/> <br/>
@@ -128,15 +128,7 @@ export const PROJECTS: IProject[] = [
         <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
       </ul>
       `,
-        techStack: [
-            'Next.js',
-            'Payload CMS',
-            'Tailwind CSS',
-            'shadcn',
-            'Swiper.js',
-            'React Hook Form',
-            'Vercel',
-        ],
+        techStack: ['React', 'Tailwind CSS', 'shadcn', 'Typescript', 'Vercel'],
         thumbnail: '/projects/thumbnail/mti-electronics.webp',
         longThumbnail: '/projects/long/mti-electronics.webp',
         images: [
@@ -145,17 +137,9 @@ export const PROJECTS: IProject[] = [
         ],
     },
     {
-        title: 'Epikcart',
+        title: 'Screenly',
         slug: 'epikcart',
-        techStack: [
-            'React',
-            'Redux',
-            'React i18n',
-            'Tailwind CSS',
-            'Framer Motion',
-            'debouncing',
-            'Api Integration',
-        ],
+        techStack: ['React', 'HTML', 'Tailwind CSS', 'Api Integration'],
         thumbnail: '/projects/thumbnail/epikcart.jpg',
         longThumbnail: '/projects/long/epikcart.jpg',
         images: [
@@ -165,8 +149,8 @@ export const PROJECTS: IProject[] = [
             '/projects/images/epikcart-4.png',
             '/projects/images/epikcart-5.png',
         ],
-        liveUrl: 'https://demo.epikcart.siphertech.com/',
-        year: 2023,
+        liveUrl: 'https://screenly-pi.vercel.app/',
+        year: 2024,
         description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
         role: `As the frontend developer in a team of five, I: <br/>
         - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
