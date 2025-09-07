@@ -68,20 +68,20 @@ const AboutMe = () => {
                 <div className="grid md:grid-cols-12 mt-9">
                     <div className="md:col-span-5">
                         <p className="text-5xl slide-up-and-fade">
-                            Hi, I&aposm Rashel.
+                            Hi, I&apos;m Rashel.
                         </p>
                     </div>
                     <div className="md:col-span-7">
                         <div className="text-lg text-muted-foreground max-w-[450px]">
                             <p className="slide-up-and-fade">
-                                I&aposm a web developer who thrives on turning
+                                I&apos;m a web developer who thrives on turning
                                 complex problems into simple, beautiful
                                 solutions. My journey in tech has been driven by
                                 curiosity and a passion for creating meaningful
                                 digital experiences.
                             </p>
                             <p className="mt-3 slide-up-and-fade">
-                                When I&aposm not coding, you&apos;ll find me
+                                When I&aposm; not coding, you&apos;ll find me
                                 exploring new technologies, contributing to open
                                 source projects, or sharing knowledge with the
                                 developer community.
