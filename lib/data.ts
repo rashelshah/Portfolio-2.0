@@ -93,7 +93,8 @@ export const MY_STACK = {
 export const PROJECTS: IProject[] = [
     {
         title: 'Crypton AI',
-        slug: 'mti-electronics',
+        slug: 'crypton-ai',
+        sourceCode: 'https://github.com/rashelshah/cryptotrend-ai.git',
         liveUrl: 'https://cryptotrend-ai.vercel.app/',
         year: 2025,
         description: `
@@ -147,7 +148,7 @@ Owned the entire development lifecycle:<br/>
     },
     {
         title: 'Screenly',
-        slug: 'epikcart',
+        slug: 'screenly',
         techStack: [
             'React',
             'Api Integration',
@@ -166,6 +167,7 @@ Owned the entire development lifecycle:<br/>
             '/projects/images/screenly-5.png',
             '/projects/images/screenly-6.png',
         ],
+        sourceCode: 'https://github.com/rashelshah/Screenly.git',
         liveUrl: 'https://screenly-pi.vercel.app/',
         year: 2024,
         description: `This is a modern, full-stack movie review platform where users can explore and share their opinions about movies. The website is built using React.js for the frontend and Node.js, Express, and MongoDB for the backend, ensuring a fast, scalable, and interactive experience.
@@ -199,7 +201,7 @@ Key Features:<br/>
     },
     {
         title: 'Newsify',
-        slug: 'resume-roaster',
+        slug: 'newsify',
         techStack: ['React', 'Javascript', 'HTML', 'CSS', 'API'],
 
         images: [
@@ -208,6 +210,7 @@ Key Features:<br/>
             '/projects/images/newsify-3.png',
             '/projects/images/newsify-4.png',
         ],
+        sourceCode: 'https://github.com/rashelshah/Newsify.git',
         liveUrl: '',
         year: 2024,
         description: `A sleek and user-friendly news website built with React that delivers real-time news using external APIs. It showcases dynamic content rendering and efficient API integration—all on the frontend.
@@ -225,7 +228,7 @@ Key Features:<br/>
     },
     {
         title: 'BlogHaven',
-        slug: 'property-pro',
+        slug: 'bloghaven',
         techStack: [
             'React.js',
             'Typescript',
@@ -234,13 +237,13 @@ Key Features:<br/>
             'Node.js',
             'Express.js',
         ],
-        thumbnail: '/projects/thumbnail/property-pro.jpg',
-        longThumbnail: '/projects/long/property-pro.jpg',
+
         images: [
             '/projects/images/property-pro-1.png',
             '/projects/images/property-pro-2.png',
             '/projects/images/property-pro-3.png',
         ],
+        sourceCode: 'https://github.com/rashelshah/BlogHaven.git',
         liveUrl: 'https://blog-haven-orcin.vercel.app',
         year: 2025,
         description:
@@ -253,16 +256,15 @@ Key Features:<br/>
     },
     {
         title: 'Dogify',
-        slug: 'crenotive',
+        slug: 'dogify',
         techStack: ['HTML', 'CSS', 'Javascript', 'Bootstrap', 'Typescript'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
+
         images: [
             '/projects/images/consulting-finance-1.png',
             '/projects/images/consulting-finance-2.png',
             '/projects/images/consulting-finance-3.png',
         ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
+        sourceCode: 'https://github.com/rashelshah/Dogify.git',
         liveUrl: 'https://crenotive.netlify.app/',
         year: 2023,
         description:
@@ -271,7 +273,7 @@ Key Features:<br/>
     },
     {
         title: 'iBook',
-        slug: 'devLinks',
+        slug: 'ibook',
         techStack: [
             'React',
             'Node.js',
@@ -280,8 +282,7 @@ Key Features:<br/>
             'JWT',
             'Tailwind CSS',
         ],
-        thumbnail: '/projects/thumbnail/devLinks.jpg',
-        longThumbnail: '/projects/long/devLinks.jpg',
+
         images: [
             '/projects/images/devLinks-1.png',
             '/projects/images/devLinks-2.png',
