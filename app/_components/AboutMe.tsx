@@ -57,7 +57,7 @@ const AboutMe = () => {
                 <h2 className="text-4xl md:text-6xl font-thin mb-20 slide-up-and-fade">
                     I craft digital experiences that blend cutting-edge
                     technology with innovative design. Specializing in modern
-                    web applications that push the boundaries of what's
+                    web applications that push the boundaries of what&apos;s
                     possible.
                 </h2>
 
@@ -68,22 +68,22 @@ const AboutMe = () => {
                 <div className="grid md:grid-cols-12 mt-9">
                     <div className="md:col-span-5">
                         <p className="text-5xl slide-up-and-fade">
-                            Hi, I'm Rashel.
+                            Hi, I&aposm Rashel.
                         </p>
                     </div>
                     <div className="md:col-span-7">
                         <div className="text-lg text-muted-foreground max-w-[450px]">
                             <p className="slide-up-and-fade">
-                                I'm a web developer who thrives on turning
+                                I&aposm a web developer who thrives on turning
                                 complex problems into simple, beautiful
                                 solutions. My journey in tech has been driven by
                                 curiosity and a passion for creating meaningful
                                 digital experiences.
                             </p>
                             <p className="mt-3 slide-up-and-fade">
-                                When I'm not coding, you'll find me exploring
-                                new technologies, contributing to open source
-                                projects, or sharing knowledge with the
+                                When I&aposm not coding, you&apos;ll find me
+                                exploring new technologies, contributing to open
+                                source projects, or sharing knowledge with the
                                 developer community.
                             </p>
                         </div>
