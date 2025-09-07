@@ -1,5 +1,4 @@
 import { GENERAL_INFO } from '@/lib/data';
-import { GitFork, Star } from 'lucide-react';
 
 interface RepoStats {
     stargazers_count: number;
