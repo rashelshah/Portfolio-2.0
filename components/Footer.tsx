@@ -1,22 +1,9 @@
 import { GENERAL_INFO } from '@/lib/data';
 
-interface RepoStats {
-    stargazers_count: number;
-    forks_count: number;
-}
-
 const Footer = async () => {
-    const repoStats = await fetch(
-        'https://api.github.com/repos/tajmirul/portfolio-2.0',
-        {
-            next: {
-                revalidate: 60 * 60, // 1 hour
-            },
-        },
-    );
-
-    const { stargazers_count, forks_count } =
-        (await repoStats.json()) as RepoStats;
+    await fetch('https://api.github.com/repos/tajmirul/portfolio-2.0', {
+        next: { revalidate: 60 * 60 }, // 1 hour
+    });
 
     return (
         <footer className="text-center pb-5" id="contact">
