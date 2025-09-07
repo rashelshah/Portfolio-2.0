@@ -6,15 +6,15 @@ export const GENERAL_INFO = {
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Rashel, I am reaching out to you because...',
 
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
     upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/rashelshah' },
+    {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/rashel-shah-65024b327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+    },
 ];
 
 export const MY_STACK = {
@@ -97,102 +97,142 @@ export const PROJECTS: IProject[] = [
         liveUrl: 'https://cryptotrend-ai.vercel.app/',
         year: 2025,
         description: `
-      A complete agency portfolio platform built for MTI Electronics to showcase their services, blog content, and product offerings. <br/> <br/>
+     Advanced cryptocurrency analytics powered by artificial intelligence. Track real-time market data, analyze trends, and discover investment opportunities. <br/> <br/>
       
-      Key Features:<br/>
-      <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
-        <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
-      </ul><br/>
-      
-      Technical Highlights:
-      <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
-      </ul>
+     Key Features:<br/>
+<ul>
+  <li>🤖 AI & Risk Analysis: Evaluate risk levels of different cryptocurrencies</li>
+  <li>📊 Smart Market Alerts: Get notified about significant market changes</li>
+  <li>📈 Top Gainers & Losers: Track daily top-performing and underperforming coins</li>
+  <li>📰 Real-Time Crypto News: Stay updated with the latest market insights</li>
+  <li>⚡ High Volatility Detection: Identify coins with sudden price swings</li>
+  <li>💬 AI Chatbot Assistant: Learn trading concepts and get interactive insights</li>
+  <li>⭐ Watchlist: Keep track of your favorite cryptocurrencies</li>
+  <li>📂 Portfolio AI Analysis: Personalized breakdown and performance analysis</li>
+  <li>🎮 Trading Simulator: Practice risk-free trading with virtual funds</li>
+</ul><br/>
+    Technical Highlights:<br/>
+<ul>
+  <li>Developed a responsive frontend with React, TypeScript, and Tailwind CSS</li>
+  <li>Implemented backend with Node.js & Express.js connected to Supabase</li>
+  <li>Integrated Coinlore and Gemini APIs for real-time market and trading data</li>
+  <li>Built AI-driven portfolio analysis and smart alert system</li>
+  <li>Configured MySQL & Supabase for scalable and secure data management</li>
+</ul><br/>
+
       `,
         role: `
-      Full-Stack Developer <br/>
-      Owned the entire development lifecycle:
-      <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
-        <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
-        <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
-      </ul>
+    Role: <br/>
+Full-Stack Developer <br/>
+Owned the entire development lifecycle:<br/>
+<ul>
+  <li>✅ Backend: Built REST APIs for portfolio, alerts, and trading simulator using Express.js</li>
+  <li>🎨 Frontend: Designed UI with React, TypeScript, and dark green/black theme</li>
+  <li>🔄 State Management: Managed client-side data with React Query & Context API</li>
+  <li>🖥️ AI Features: Integrated chatbot and AI risk analysis module</li>
+  <li>🚀 Deployment: Deployed app with Supabase hosting & cloud services</li>
+  <li>🧩 Third-Party Integration: Added APIs (Coinlore, Gemini) for live crypto data</li>
+</ul>
       `,
-        techStack: ['React', 'Tailwind CSS', 'shadcn', 'Typescript', 'Vercel'],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
+        techStack: ['React', 'Typescript', 'Tailwind CSS', 'shadcn', 'Vercel'],
+
         images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
+            '/projects/images/crypton-1.png',
+            '/projects/images/crypton-2.png',
+            '/projects/images/crypton-3.png',
+            '/projects/images/crypton-4.png',
+            '/projects/images/crypton-5.png',
+            '/projects/images/crypton-6.png',
         ],
     },
     {
         title: 'Screenly',
         slug: 'epikcart',
-        techStack: ['React', 'HTML', 'Tailwind CSS', 'Api Integration'],
-        thumbnail: '/projects/thumbnail/epikcart.jpg',
-        longThumbnail: '/projects/long/epikcart.jpg',
+        techStack: [
+            'React',
+            'Api Integration',
+            'Node.js',
+            'Express.js',
+            'MongoDB',
+            'HTML',
+            'Tailwind CSS',
+        ],
+
         images: [
-            '/projects/images/epikcart-1.png',
-            '/projects/images/epikcart-2.png',
-            '/projects/images/epikcart-3.png',
-            '/projects/images/epikcart-4.png',
-            '/projects/images/epikcart-5.png',
+            '/projects/images/screenly-1.png',
+            '/projects/images/screenly-2.png',
+            '/projects/images/screenly-3.png',
+            '/projects/images/screenly-4.png',
+            '/projects/images/screenly-5.png',
+            '/projects/images/screenly-6.png',
         ],
         liveUrl: 'https://screenly-pi.vercel.app/',
         year: 2024,
-        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
-        role: `As the frontend developer in a team of five, I: <br/>
-        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-        - Integrated multi-language support with React i18n, including RTL handling.<br/>
-        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
+        description: `This is a modern, full-stack movie review platform where users can explore and share their opinions about movies. The website is built using React.js for the frontend and Node.js, Express, and MongoDB for the backend, ensuring a fast, scalable, and interactive experience.
+
+Users can browse movies fetched from an external API, read reviews from other users, and contribute their own ratings and comments. The website features dynamic content loading, user authentication, and real-time data storage, offering a seamless experience across devices. Whether you’re a casual viewer or a film enthusiast, this platform helps you discover new movies and participate in discussions with a community of movie lovers.
+Key Features:<br/>
+<ul>
+  <li>🎬 Movie Browsing: Explore a wide collection of movies with search and filter options</li>
+  <li>📝 User Reviews & Ratings: Share your thoughts and rate movies you’ve watched</li>
+  <li>🔑 User Authentication: Secure sign-up and login for personalized experiences</li>
+  <li>💬 Comments Section: Engage in discussions with other movie enthusiasts</li>
+  <li>📂 Review Management: Edit or delete your reviews anytime</li>
+  <li>🌐 API Integration: Get up-to-date movie details from trusted external sources</li>
+  <li>📱 Responsive Design: Enjoy a smooth experience across all devices</li>
+  <li>⭐ Watchlist: Save your favorite movies for quick access</li>
+  <li>📊 Dynamic Data Storage: Reviews and ratings are saved and retrieved in real time using MongoDB</li>
+</ul>
+
+<br/>
+
+    Technical Highlights:<br/>
+<ul>
+  <li>Developed a responsive frontend with React, TypeScript, and Tailwind CSS</li>
+  <li>Implemented backend with Node.js & Express.js connected to Supabase</li>
+  <li>Integrated Coinlore and Gemini APIs for real-time market and trading data</li>
+  <li>Built AI-driven portfolio analysis and smart alert system</li>
+  <li>Configured MySQL & Supabase for scalable and secure data management</li>
+</ul><br/>
+
+      `,
     },
     {
-        title: 'Resume Roaster',
+        title: 'Newsify',
         slug: 'resume-roaster',
-        techStack: [
-            'GPT-4',
-            'Next.js',
-            'Postgressql',
-            'Prisma',
-            'Tailwind CSS',
-        ],
-        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-        longThumbnail: '/projects/long/resume-roaster.jpg',
+        techStack: ['React', 'Javascript', 'HTML', 'CSS', 'API'],
+
         images: [
-            '/projects/images/resume-roaster-1.png',
-            '/projects/images/resume-roaster-2.png',
-            '/projects/images/resume-roaster-3.png',
+            '/projects/images/newsify-1.png',
+            '/projects/images/newsify-2.png',
+            '/projects/images/newsify-3.png',
+            '/projects/images/newsify-4.png',
         ],
-        liveUrl: 'https://resume-roaster.vercel.app/',
-        year: 2023,
-        description:
-            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-        role: `As the sole developer and business owner, I:<br/>
-        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
+        liveUrl: '',
+        year: 2024,
+        description: `A sleek and user-friendly news website built with React that delivers real-time news using external APIs. It showcases dynamic content rendering and efficient API integration—all on the frontend.
+        Key Features:<br/>
+        <ul>  
+  <li>📰 Real-Time News: Fetches and displays the latest news from external APIs</li>  
+  <li>📂 Categorized Content: Browse news by different categories for easy access</li>  
+  <li>🔍 Search Functionality: Quickly find news articles by keywords</li>  
+  <li>⚡ Fast & Responsive: Smooth navigation with a clean and modern interface</li>  
+  <li>🌐 Fully Frontend-Based: Handles all data fetching and rendering on the client side</li>  
+</ul>  
+
+
+`,
     },
     {
-        title: 'Real Estate',
+        title: 'BlogHaven',
         slug: 'property-pro',
         techStack: [
             'React.js',
-            'Redux',
+            'Typescript',
             'Tailwind CSS',
-            'React i18n',
-            'Framer Motion',
+            'MongoDB',
+            'Node.js',
+            'Express.js',
         ],
         thumbnail: '/projects/thumbnail/property-pro.jpg',
         longThumbnail: '/projects/long/property-pro.jpg',
@@ -201,8 +241,8 @@ export const PROJECTS: IProject[] = [
             '/projects/images/property-pro-2.png',
             '/projects/images/property-pro-3.png',
         ],
-        liveUrl: 'https://demo.propertypro.siphertech.com/',
-        year: 2023,
+        liveUrl: 'https://blog-haven-orcin.vercel.app',
+        year: 2025,
         description:
             'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
         role: `As the frontend developer, I:<br/>
@@ -212,9 +252,9 @@ export const PROJECTS: IProject[] = [
         - Enhanced user interaction with animations and transitions using Framer Motion.`,
     },
     {
-        title: 'Consulting Finance',
+        title: 'Dogify',
         slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
+        techStack: ['HTML', 'CSS', 'Javascript', 'Bootstrap', 'Typescript'],
         thumbnail: '/projects/thumbnail/consulting-finance.jpg',
         longThumbnail: '/projects/long/consulting-finance.jpg',
         images: [
@@ -230,9 +270,16 @@ export const PROJECTS: IProject[] = [
         role: ``,
     },
     {
-        title: 'devLinks',
+        title: 'iBook',
         slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
+        techStack: [
+            'React',
+            'Node.js',
+            'Express.js',
+            'MongoDB',
+            'JWT',
+            'Tailwind CSS',
+        ],
         thumbnail: '/projects/thumbnail/devLinks.jpg',
         longThumbnail: '/projects/long/devLinks.jpg',
         images: [

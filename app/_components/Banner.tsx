@@ -50,9 +50,11 @@ const Banner = () => {
                         <span className="font-medium text-foreground">
                             Rashel
                         </span>
-                        . A creative Frontend Developer with 3+ years of
-                        experience in building high-performance, scalable, and
-                        responsive web solutions.
+                        . A web developer and student who enjoys turning ideas
+                        into interactive digital experiences. Whether it’s
+                        designing smooth user interfaces or optimizing
+                        performance, I aim to create web solutions that are both
+                        functional and engaging.
                     </p>
                     <Button
                         as="link"
@@ -69,25 +71,27 @@ const Banner = () => {
                 <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            3+
+                            🤯
                         </h5>
                         <p className="text-muted-foreground">
-                            Years of Experience
+                            Hours Spent Googling Code
                         </p>
                     </div>
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            7+
+                            ⚙️
                         </h5>
                         <p className="text-muted-foreground">
-                            Completed Projects
+                            Experiments Gone Wrong
                         </p>
                     </div>
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            10K+
+                            🚀
                         </h5>
-                        <p className="text-muted-foreground">Hours Worked</p>
+                        <p className="text-muted-foreground">
+                            Skills Growing Every Day
+                        </p>
                     </div>
                 </div>
             </div>
