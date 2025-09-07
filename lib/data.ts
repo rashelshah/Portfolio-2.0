@@ -95,7 +95,7 @@ export const PROJECTS: IProject[] = [
         title: 'Crypton AI',
         slug: 'crypton-ai',
         sourceCode: 'https://github.com/rashelshah/cryptotrend-ai.git',
-        liveUrl: 'https://cryptotrend-ai.vercel.app/',
+        liveUrl: 'https://crypton-ai.vercel.app/',
         year: 2025,
         description: `
      Advanced cryptocurrency analytics powered by artificial intelligence. Track real-time market data, analyze trends, and discover investment opportunities. <br/> <br/>
