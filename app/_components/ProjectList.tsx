@@ -37,7 +37,7 @@ const ProjectList = () => {
     return (
         <section className="pb-section" id="selected-projects">
             <div className="container">
-                <SectionTitle title="SELECTED PROJECTS" />
+                <SectionTitle title="MY PROJECTS" />
 
                 <div className="group/projects relative" ref={containerRef}>
                     <div

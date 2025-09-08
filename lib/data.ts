@@ -74,6 +74,21 @@ export const MY_STACK = {
             icon: '/logo/supabase.png',
         },
     ],
+
+    Technologies: [
+        {
+            name: 'C',
+            icon: '/logo/c.png',
+        },
+        {
+            name: 'C++',
+            icon: '/logo/cpp.png',
+        },
+        {
+            name: 'Python',
+            icon: '/logo/python.svg.png',
+        },
+    ],
     tools: [
         {
             name: 'Git',
@@ -172,7 +187,8 @@ Owned the entire development lifecycle:<br/>
         year: 2024,
         description: `This is a modern, full-stack movie review platform where users can explore and share their opinions about movies. The website is built using React.js for the frontend and Node.js, Express, and MongoDB for the backend, ensuring a fast, scalable, and interactive experience.
 
-Users can browse movies fetched from an external API, read reviews from other users, and contribute their own ratings and comments. The website features dynamic content loading, user authentication, and real-time data storage, offering a seamless experience across devices. Whether you’re a casual viewer or a film enthusiast, this platform helps you discover new movies and participate in discussions with a community of movie lovers.
+Users can browse movies fetched from an external API, read reviews from other users, and contribute their own ratings and comments. The website features dynamic content loading, user authentication, and real-time data storage, offering a seamless experience across devices. Whether you’re a casual viewer or a film enthusiast, this platform helps you discover new movies and participate in discussions with a community of movie lovers. <br/><br/>
+
 Key Features:<br/>
 <ul>
   <li>🎬 Movie Browsing: Explore a wide collection of movies with search and filter options</li>
@@ -213,7 +229,7 @@ Key Features:<br/>
         sourceCode: 'https://github.com/rashelshah/Newsify.git',
         liveUrl: '',
         year: 2024,
-        description: `A sleek and user-friendly news website built with React that delivers real-time news using external APIs. It showcases dynamic content rendering and efficient API integration—all on the frontend.
+        description: `A sleek and user-friendly news website built with React that delivers real-time news using external APIs. It showcases dynamic content rendering and efficient API integration—all on the frontend. <br/><br/>
         Key Features:<br/>
         <ul>  
   <li>📰 Real-Time News: Fetches and displays the latest news from external APIs</li>  
@@ -239,36 +255,57 @@ Key Features:<br/>
         ],
 
         images: [
-            '/projects/images/property-pro-1.png',
-            '/projects/images/property-pro-2.png',
-            '/projects/images/property-pro-3.png',
+            '/projects/images/bloghaven-1.png',
+            '/projects/images/bloghaven-2.png',
+            '/projects/images/bloghaven-3.png',
+            '/projects/images/bloghaven-4.png',
+            '/projects/images/bloghaven-5.png',
+            '/projects/images/bloghaven-6.png',
+            '/projects/images/bloghaven-7.png',
+            '/projects/images/bloghaven-8.png',
         ],
         sourceCode: 'https://github.com/rashelshah/BlogHaven.git',
         liveUrl: 'https://blog-haven-orcin.vercel.app',
         year: 2025,
-        description:
-            'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
-        role: `As the frontend developer, I:<br/>
-        - Built the frontend using React, Redux, RTK Query, Framer Motion, and Tailwind CSS.<br/>
-        - Integrated dynamic state management for efficient handling of property data.<br/>
-        - Implemented multi-language support with React i18n to cater to diverse audiences.<br/>
-        - Enhanced user interaction with animations and transitions using Framer Motion.`,
+        description: `BlogHaven is a modern blogging platform where users can create and share articles, with content curated by admins for quality and relevance. It features trending blogs, search functionality, and a seamless experience across devices using the MERN stack. <br/><br/>
+
+            Key Features:<br/>
+            <ul>
+  <li>✍️ Blog Submission: Users can create and submit blogs for admin approval</li>
+  <li>✅ Admin Moderation: Approve, reject, hide, or delete blog posts to maintain quality</li>
+  <li>🔥 Trending Blogs: Highlights popular articles based on likes and comments</li>
+  <li>🔍 Search & Filter: Easily find blogs by keywords or categories</li>
+  <li>📱 Responsive Design: Optimized for both mobile and desktop devices</li>
+  <li>🔒 Secure Authentication: Signup and login using JWT for safe user management</li>
+</ul>
+            `,
     },
     {
         title: 'Dogify',
         slug: 'dogify',
-        techStack: ['HTML', 'CSS', 'Javascript', 'Bootstrap', 'Typescript'],
+        techStack: ['React', 'Typescript', 'Javascript', 'Bootstrap', 'CSS'],
 
         images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
+            '/projects/images/dogify-1.png',
+            '/projects/images/dogify-2.png',
+            '/projects/images/dogify-3.png',
+            '/projects/images/dogify-4.png',
+            '/projects/images/dogify-5.png',
         ],
         sourceCode: 'https://github.com/rashelshah/Dogify.git',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
-        description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
+        liveUrl: 'https://dogify-rho.vercel.app',
+        year: 2024,
+        description: `Dogify helps you identify your dog’s breed by simply uploading its photo and explore a marketplace for all dog-related products in one place. Smart, easy, and made for dog lovers! <br/><br/>
+
+            Key Features:<br/>
+            <ul>
+  <li>🐶 Breed Identification: Upload photos to instantly recognize your dog’s breed</li>
+  <li>🛍️ Marketplace: Discover a variety of dog-related products for sale</li>
+  <li>🔍 Search & Filter: Find specific items by category or keyword</li>
+  <li>📱 Responsive Design: Accessible on various devices including smartphones and tablets</li>
+  <li>🔒 Secure Login: Sign up and log in securely using JWT tokens</li>
+</ul>
+            `,
         role: ``,
     },
     {
@@ -288,35 +325,22 @@ Key Features:<br/>
             '/projects/images/devLinks-2.png',
             '/projects/images/devLinks-3.png',
         ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
+        sourceCode: 'https://github.com/rashelshah/iBook.git',
+        liveUrl: '',
+        year: 2024,
+        description: `A simple and efficient notes-taking website to create, organize, and access your notes anytime.
+Keep your thoughts, ideas, and important information neatly saved in one place with ease.<br/><br/>
 
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
+            Key Features:<br/>
+            <ul>
+            <li>📝 Create & Edit Notes: Quickly jot down and update your notes</li>
+            <li>📂 Organize Notes: Sort notes by categories or tags for easy access</li>
+            <li>🔍 Search Functionality: Find notes instantly using keywords</li>
+            <li>☁️ Cloud Sync: Access your notes from any device seamlessly</li>
+            <li>🔒 Secure Storage: Keep your notes safe and private</li>
+            </ul>
+
+`,
         role: ``,
-    },
-];
-
-export const MY_EXPERIENCE = [
-    {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
-    },
-    {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
-    },
-    {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
-    },
-    {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
     },
 ];
