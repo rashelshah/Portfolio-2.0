@@ -81,7 +81,7 @@ const AboutMe = () => {
                                 digital experiences.
                             </p>
                             <p className="mt-3 slide-up-and-fade">
-                                When I&aposm; not coding, you&apos;ll find me
+                                When I&apos;m not coding, you&apos;ll find me
                                 exploring new technologies, contributing to open
                                 source projects, or sharing knowledge with the
                                 developer community.
