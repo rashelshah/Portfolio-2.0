@@ -321,9 +321,9 @@ Key Features:<br/>
         ],
 
         images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
+            '/projects/images/ibook-1.png',
+            '/projects/images/ibook-2.png',
+            '/projects/images/ibook-3.png',
         ],
         sourceCode: 'https://github.com/rashelshah/iBook.git',
         liveUrl: '',
