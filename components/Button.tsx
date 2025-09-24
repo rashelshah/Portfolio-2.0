@@ -77,23 +77,6 @@ const Button = ({
     if (as === 'link') {
         const props = rest as ComponentProps<typeof Link>;
 
-        if (props.target === '_blank') {
-            return (
-                <a
-                    className={buttonClasses}
-                    {...props}
-                    href={props.href.toString() || '#'}
-                >
-                    {variant !== 'link' && (
-                        <span className="absolute top-[200%] left-0 right-0 h-full bg-white rounded-[50%] group-hover:top-0 transition-all duration-500 scale-150"></span>
-                    )}
-                    <span className="z-[1]">
-                        {loading ? <Child icon={icon} /> : children}
-                    </span>
-                </a>
-            );
-        }
-
         return (
             <Link className={buttonClasses} {...props} href={props.href || '#'}>
                 {variant !== 'link' && (
