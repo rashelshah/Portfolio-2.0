@@ -6,9 +6,9 @@ This is my personal portfolio website showcasing my projects, skills, and experi
 
 -   HTML, CSS, JavaScript
 -   Next.js
--   Node.js & Express
--   MongoDB
--   Other tools and frameworks I use
+-   Framer Motion
+-   Tailwind CSS
+-   GSAP Animation Library
 
 ## 📂 Features
 
