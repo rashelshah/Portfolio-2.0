@@ -5,7 +5,7 @@ This is my personal portfolio website showcasing my projects, skills, and experi
 ## 🚀 Tech Stack
 
 -   HTML, CSS, JavaScript
--   React.js
+-   Next.js
 -   Node.js & Express
 -   MongoDB
 -   Other tools and frameworks I use
