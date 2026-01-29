@@ -215,6 +215,56 @@ Key Features:<br/>
 
       `,
     },
+
+    {
+        title: 'SF90 Immersion',
+        slug: 'sf90-immersion',
+        techStack: ['Next.js', 'Typescript', 'Framer Motion', 'Tailwind CSS'],
+
+        images: [
+            '/projects/images/sf90-immersion-1.png',
+            '/projects/images/sf90-immersion-2.png',
+            '/projects/images/sf90-immersion-3.png',
+            '/projects/images/sf90-immersion-4.png',
+            '/projects/images/sf90-immersion-5.png',
+            '/projects/images/sf90-immersion-6.png',
+            '/projects/images/sf90-immersion-7.png',
+        ],
+        sourceCode: 'https://github.com/rashelshah/SF90-Immersion.git',
+        liveUrl: 'https://ferrari-sf-90-stradale.vercel.app',
+        year: 2026,
+        description: `SF90 Immersion is a cinematic, interactive web experience that showcases the engineering, performance, and design philosophy of the Ferrari SF90 Stradale through immersive visuals and scroll-driven storytelling. The project blends high-end UI design with advanced frontend animations to create a premium digital showroom that feels closer to a product launch experience than a traditional website.
+
+Users can explore key systems such as the hybrid powertrain, engine architecture, aerodynamics, chassis, and interior through smooth transitions, dynamic sections, and cinematic visuals. Every interaction is designed to communicate speed, precision, and technological excellence while maintaining a clean, luxury aesthetic.
+
+Whether viewed as a design experiment or a technical demonstration, SF90 Immersion highlights how modern web technologies can be used to tell complex engineering stories in an engaging and accessible way. <br/><br/>
+
+Key Features:<br/>
+<ul>
+  <li>🏎️ Cinematic Hero Experience: High-impact visuals and smooth intro animations</li>
+  <li>🧬 Hybrid System Visualization: Dedicated section explaining Ferrari’s plug-in hybrid architecture</li>
+  <li>⚙️ Engine & Powertrain Showcase: Detailed presentation of the V8 engine and performance metrics</li>
+  <li>🌪️ Aerodynamics Exploration: Visual storytelling of airflow, downforce, and cooling management</li>
+  <li>🛞 Chassis & Handling Section: Structural and suspension-focused technical breakdown</li>
+  <li>🛋️ Interior Experience: Door-open transition and cockpit-focused cinematic reveal</li>
+  <li>🖼️ Interactive Gallery: Masonry layout with flip cards showing fun Ferrari facts</li>
+  <li>📱 Fully Responsive Design: Optimized for desktop, tablet, and mobile devices</li>
+</ul>
+
+<br/>
+
+Technical Highlights:<br/>
+<ul>
+  <li>Built with React.js and Tailwind CSS for a modern, scalable frontend</li>
+  <li>Implemented smooth animations using Framer Motion and GSAP</li>
+  <li>Scroll-driven storytelling with performance-optimized motion</li>
+  <li>Reusable component-based architecture</li>
+  <li>Optimized image loading and asset management for fast performance</li>
+  <li>Deployed on Vercel for seamless hosting and CI/CD</li>
+</ul><br/>
+`,
+    },
+
     {
         title: 'Newsify',
         slug: 'newsify',
