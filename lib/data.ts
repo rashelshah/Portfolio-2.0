@@ -89,6 +89,16 @@ export const MY_STACK = {
             icon: '/logo/python.svg.png',
         },
     ],
+    platform: [
+        {
+            name: 'Shopify (App Development, APIs, CLI)',
+            icon: '/logo/shopify.png',
+        },
+        {
+            name: 'SaaS Architecture',
+            icon: '/logo/saas.png',
+        },
+    ],
     tools: [
         {
             name: 'Git',
@@ -101,6 +111,14 @@ export const MY_STACK = {
         {
             name: 'AWS',
             icon: '/logo/aws.png',
+        },
+        {
+            name: 'Vercel',
+            icon: '/logo/vercel.png',
+        },
+        {
+            name: 'Render',
+            icon: '/logo/render-1.png',
         },
     ],
 };
@@ -392,5 +410,23 @@ Keep your thoughts, ideas, and important information neatly saved in one place w
 
 `,
         role: ``,
+    },
+];
+
+export const MY_EXPERIENCE = [
+    {
+        title: 'Full Stack Developer Intern',
+        company: 'Lobelite Infotech Pvt Ltd',
+        duration: 'Feb 2026 - Present',
+    },
+    {
+        title: 'Full Stack Developer Intern',
+        company: 'Industry Project affiliated with SRMIST',
+        duration: 'Feb 2026 - Feb 2026',
+    },
+    {
+        title: 'Technical Blog Writer Intern',
+        company: 'KaizenStat',
+        duration: 'Feb 2026 - Present',
     },
 ];
