@@ -23,7 +23,7 @@ const WordFlip = () => {
 
     return (
         <span
-            className="inline-grid relative w-[7em]"
+            className="inline-grid relative w-auto min-w-[5.3em] max-w-full"
             style={{ perspective: '1200px', clipPath: 'inset(0 -20% -50% -20%)' }}
         >
             <AnimatePresence mode="popLayout">
