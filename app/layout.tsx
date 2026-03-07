@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Anton, Roboto_Flex } from 'next/font/google';
+import { Anton, Roboto_Flex, Hind } from 'next/font/google';
 import { ReactLenis } from 'lenis/react';
 
 import 'lenis/dist/lenis.css';
@@ -28,6 +28,13 @@ const robotoFlex = Roboto_Flex({
     variable: '--font-roboto-flex',
 });
 
+const hindFont = Hind({
+    weight: ['700'],
+    style: 'normal',
+    subsets: ['devanagari', 'latin'],
+    variable: '--font-hind',
+});
+
 export const metadata: Metadata = {
     title: 'Portfolio - Rashel Shah',
     description: 'Personal portfolio of Rashel Shah',
@@ -52,7 +59,7 @@ export default function RootLayout({
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}
             </Script>
             <body
-                className={`${antonFont.variable} ${robotoFlex.variable} antialiased`}
+                className={`${antonFont.variable} ${robotoFlex.variable} ${hindFont.variable} antialiased`}
             >
                 <ReactLenis
                     root

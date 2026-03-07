@@ -62,6 +62,7 @@ export default {
             },
             fontFamily: {
                 anton: ['var(--font-anton)'],
+                hind: ['var(--font-hind)', 'sans-serif'],
                 'roboto-flex': ['var(--font-roboto-flex)'],
             },
             padding: {
