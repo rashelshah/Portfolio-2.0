@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import React from 'react';
+import WordFlip from '@/components/WordFlip';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -42,7 +43,7 @@ const Banner = () => {
                 <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[544px]">
                     <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton">
                         <span className="text-primary">FULL STACK</span>
-                        <br /> <span className="ml-4">DEVELOPER</span>
+                        <br /> <span className="ml-4"><WordFlip/></span>
                     </h1>
                     <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
                         Hi! I&apos;m{' '}
