@@ -424,7 +424,6 @@ export const MY_EXPERIENCE = [
         company: 'TUBELIGHT MEDIAWORKS · Industry Project (via SRMIST)',
         duration: 'Feb 2026 - Present',
         description: `• Completed initial internship (Feb 2026) <br/> • Re-selected for a second internship based on performance`,
-
     },
     {
         title: 'Technical Blog Writer Intern',
