@@ -421,12 +421,14 @@ export const MY_EXPERIENCE = [
     },
     {
         title: 'Full Stack Developer Intern',
-        company: 'Industry Project affiliated with SRMIST',
-        duration: 'Feb 2026 - Feb 2026',
+        company: 'TUBELIGHT MEDIAWORKS · Industry Project (via SRMIST)',
+        duration: 'Feb 2026 - Present',
+        description: `• Completed initial internship (Feb 2026) <br/> • Re-selected for a second internship based on performance`,
+
     },
     {
         title: 'Technical Blog Writer Intern',
         company: 'KaizenStat',
-        duration: 'Feb 2026 - Present',
+        duration: 'Feb 2026 - Mar 2026',
     },
 ];
