@@ -41,6 +41,10 @@ const SectionTitle = ({ icon, title, className, classNames }: Props) => {
             >
                 {title}
             </h2>
+            <span
+                className="h-px flex-1 bg-gradient-to-r from-border to-transparent"
+                aria-hidden
+            />
         </div>
     );
 };

@@ -84,9 +84,23 @@ export const MY_STACK = {
             name: 'C++',
             icon: '/logo/cpp.png',
         },
+    ],
+    'AI & LLM': [
         {
             name: 'Python',
             icon: '/logo/python.svg.png',
+        },
+        {
+            name: 'LangChain',
+            icon: '/logo/langchain.svg',
+        },
+        {
+            name: 'LangGraph',
+            icon: '/logo/langgraph.svg',
+        },
+        {
+            name: 'RAG',
+            icon: '/logo/rag.svg',
         },
     ],
     platform: [
@@ -124,6 +138,49 @@ export const MY_STACK = {
 };
 
 export const PROJECTS: IProject[] = [
+    {
+        title: 'FoxlyCod',
+        slug: 'foxlycod',
+        techStack: [
+            'Next.js',
+            'Typescript',
+            'Tailwind CSS',
+            'Motion',
+            'Shopify',
+            'Vercel',
+        ],
+
+        images: [
+            '/projects/images/foxlycod-1.jpg',
+            '/projects/images/foxlycod-2.jpg',
+            '/projects/images/foxlycod-3.jpg',
+            '/projects/images/foxlycod-4.jpg',
+        ],
+        sourceCode: 'https://github.com/rashelshah/foxlycod-web',
+        liveUrl: 'https://foxlycod.com',
+        year: 2026,
+        description: `The marketing and conversion site for Foxly, a Shopify app that turns cash-on-delivery into paid orders with one branded 1-click order form. Merchants can offer full prepaid with a discount, a partial deposit, or COD with a fee, all with OTP verification, fraud blocking, upsells and multi-pixel tracking at 0% commission. <br/><br/>
+
+Key Features:<br/>
+<ul>
+  <li>🧾 Live Order-Form Demo: Switch themes, bundles and payment options on a working replica of the Shopify form</li>
+  <li>🧮 COD Cost Calculator: Sliders that model RTO losses and the margin recovered with prepaid and partial payments</li>
+  <li>💳 Pricing & Plans: Monthly / yearly toggle with a clear breakdown of orders, SMS and overage per tier</li>
+  <li>⚖️ Comparison Pages: Side-by-side breakdowns against other COD apps</li>
+  <li>📅 Demo Booking: Cal.com booking modal and a floating call-to-action</li>
+  <li>🌍 Built for Global Stores: Multi-language and RTL-ready messaging</li>
+</ul><br/>
+
+Technical Highlights:<br/>
+<ul>
+  <li>Built with Next.js App Router, React 19, TypeScript and Tailwind CSS 4</li>
+  <li>Smooth section reveals and micro-interactions using Motion</li>
+  <li>SEO-first setup: per-page metadata, sitemap, robots and generated Open Graph images</li>
+  <li>Content-driven pages powered by typed data modules for plans, FAQs and comparisons</li>
+  <li>Deployed on Vercel</li>
+</ul><br/>
+`,
+    },
     {
         title: 'Crypton AI',
         slug: 'crypton-ai',

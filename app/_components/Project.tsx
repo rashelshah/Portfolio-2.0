@@ -86,12 +86,12 @@ const Project = ({ index, project, onMouseEnter }: Props) => {
     return (
         <TransitionLink
             href={`/projects/${project.slug}`}
-            className="project-item group leading-none py-5 md:border-b first:!pt-0 last:pb-0 last:border-none md:group-hover/projects:opacity-30 md:hover:!opacity-100 transition-all"
+            className="project-item group leading-none py-5 md:border-b first:!pt-0 last:pb-0 last:border-none md:group-hover/projects:opacity-30 md:hover:!opacity-100 md:hover:translate-x-3 transition-all duration-500"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <div className="flex gap-2 md:gap-5">
-                <div className="font-anton text-muted-foreground">
+            <div className="flex gap-2 md:gap-5 items-start md:pr-10">
+                <div className="font-anton text-muted-foreground transition-colors group-hover:text-primary">
                     _{(index + 1).toString().padStart(2, '0')}.
                 </div>
                 <div className="">
@@ -119,22 +119,20 @@ const Project = ({ index, project, onMouseEnter }: Props) => {
                             </svg>
                         </span>
                     </h4>
-                    <div className="mt-2 flex flex-wrap gap-3 text-muted-foreground text-xs">
-                        {project.techStack
-                            .slice(0, 3)
-                            .map((tech, idx, stackArr) => (
-                                <div
-                                    className="gap-3 flex items-center"
-                                    key={tech}
-                                >
-                                    <span className="">{tech}</span>
-                                    {idx !== stackArr.length - 1 && (
-                                        <span className="inline-block size-2 rounded-full bg-background-light"></span>
-                                    )}
-                                </div>
-                            ))}
+                    <div className="mt-3 flex flex-wrap gap-2 text-muted-foreground text-xs">
+                        {project.techStack.slice(0, 3).map((tech) => (
+                            <span
+                                key={tech}
+                                className="rounded-full border border-border/70 px-2.5 py-1 transition-colors group-hover:border-primary/40 group-hover:text-foreground"
+                            >
+                                {tech}
+                            </span>
+                        ))}
                     </div>
                 </div>
+                <span className="ml-auto max-md:hidden self-center font-anton text-2xl text-muted-foreground">
+                    {project.year}
+                </span>
             </div>
         </TransitionLink>
     );

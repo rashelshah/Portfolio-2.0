@@ -85,12 +85,12 @@ const ProjectDetails = ({ project }: Props) => {
     );
 
     return (
-        <section className="pt-5 pb-14">
+        <section className="pt-24 pb-14">
             <div className="container" ref={containerRef}>
                 <TransitionLink
                     back
                     href="/"
-                    className="mb-16 inline-flex gap-2 items-center group h-12"
+                    className="mb-10 inline-flex gap-2 items-center group h-12"
                 >
                     <ArrowLeft className="group-hover:-translate-x-1 group-hover:text-primary transition-all duration-300" />
                     Back
@@ -101,7 +101,7 @@ const ProjectDetails = ({ project }: Props) => {
                     id="info"
                 >
                     <div className="relative w-full">
-                        <div className="flex items-start gap-6 mx-auto mb-10 max-w-[635px]">
+                        <div className="flex flex-wrap items-center gap-x-6 gap-y-4 mx-auto mb-10 max-w-[635px]">
                             <h1 className="fade-in-later opacity-0 text-4xl md:text-[60px] leading-none font-anton overflow-hidden">
                                 <span className="inline-block">
                                     {project.title}
@@ -109,24 +109,26 @@ const ProjectDetails = ({ project }: Props) => {
                             </h1>
 
                             <div className="fade-in-later opacity-0 flex gap-2">
-                                {project.sourceCode && (
-                                    <a
-                                        href={project.sourceCode}
-                                        target="_blank"
-                                        rel="noreferrer noopener"
-                                        className="hover:text-primary"
-                                    >
-                                        <Github size={30} />
-                                    </a>
-                                )}
                                 {project.liveUrl && (
                                     <a
                                         href={project.liveUrl}
                                         target="_blank"
                                         rel="noreferrer noopener"
-                                        className="hover:text-primary"
+                                        className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_-10px_hsl(var(--primary)/0.8)]"
                                     >
-                                        <ExternalLink size={30} />
+                                        <ExternalLink size={16} />
+                                        Live site
+                                    </a>
+                                )}
+                                {project.sourceCode && (
+                                    <a
+                                        href={project.sourceCode}
+                                        target="_blank"
+                                        rel="noreferrer noopener"
+                                        className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium transition-all hover:-translate-y-0.5 hover:border-primary hover:text-primary"
+                                    >
+                                        <Github size={16} />
+                                        Source
                                     </a>
                                 )}
                             </div>
@@ -145,8 +147,15 @@ const ProjectDetails = ({ project }: Props) => {
                                     Tech & Technique
                                 </p>
 
-                                <div className="text-lg">
-                                    {project.techStack.join(', ')}
+                                <div className="flex flex-wrap gap-2">
+                                    {project.techStack.map((tech) => (
+                                        <span
+                                            key={tech}
+                                            className="rounded-full border border-border/70 bg-white/[0.03] px-3 py-1 text-sm"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
                                 </div>
                             </div>
                             <div className="fade-in-later">
@@ -176,13 +185,13 @@ const ProjectDetails = ({ project }: Props) => {
                 </div>
 
                 <div
-                    className="fade-in-later relative flex flex-col gap-2 max-w-[800px] mx-auto"
+                    className="fade-in-later relative flex flex-col gap-4 max-w-[800px] mx-auto"
                     id="images"
                 >
                     {project.images.map((image) => (
                         <div
                             key={image}
-                            className="group relative w-full aspect-[750/400] bg-background-light"
+                            className="group relative w-full aspect-[750/400] overflow-hidden rounded-2xl border border-white/10 bg-background-light transition-[border-color,box-shadow] duration-500 hover:border-primary/50 hover:shadow-[0_30px_80px_-30px_hsl(var(--primary)/0.4)]"
                             style={{
                                 backgroundImage: `url(${image})`,
                                 backgroundSize: 'cover',
@@ -193,7 +202,7 @@ const ProjectDetails = ({ project }: Props) => {
                             <a
                                 href={image}
                                 target="_blank"
-                                className="absolute top-4 right-4 bg-background/70 text-foreground size-12 inline-flex justify-center items-center transition-all opacity-0 hover:bg-primary hover:text-primary-foreground group-hover:opacity-100"
+                                className="absolute top-4 right-4 rounded-full bg-background/70 text-foreground size-12 inline-flex justify-center items-center transition-all opacity-0 hover:bg-primary hover:text-primary-foreground group-hover:opacity-100"
                             >
                                 <ExternalLink />
                             </a>

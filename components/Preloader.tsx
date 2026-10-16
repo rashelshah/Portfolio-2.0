@@ -14,6 +14,10 @@ const Preloader = () => {
                 defaults: {
                     ease: 'power1.inOut',
                 },
+                // lets entrance animations (see Banner) skip the wait on client-side navigation
+                onComplete: () => {
+                    document.documentElement.dataset.ready = 'true';
+                },
             });
 
             tl.to('.name-text-en span', {

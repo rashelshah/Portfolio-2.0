@@ -54,14 +54,20 @@ const AboutMe = () => {
     return (
         <section className="pb-section" id="about-me">
             <div className="container" ref={container}>
-                <h2 className="text-4xl md:text-6xl font-thin mb-20 slide-up-and-fade">
-                    I craft digital experiences that blend cutting-edge
-                    technology with innovative design. Specializing in modern
-                    web applications that push the boundaries of what&apos;s
-                    possible.
+                <h2 className="text-4xl md:text-6xl font-thin mb-20 slide-up-and-fade text-foreground/40">
+                    I craft{' '}
+                    <span className="text-foreground">digital experiences</span>{' '}
+                    that blend{' '}
+                    <span className="text-shine font-normal">
+                        cutting-edge technology
+                    </span>{' '}
+                    with <span className="text-foreground">innovative design</span>.
+                    Specializing in modern web applications that push the
+                    boundaries of what&apos;s possible.
                 </h2>
 
-                <p className="pb-3 border-b text-muted-foreground slide-up-and-fade">
+                <p className="pb-3 border-b text-muted-foreground slide-up-and-fade flex items-center gap-3">
+                    <span className="size-1.5 rounded-full bg-primary" />
                     This is me.
                 </p>
 

@@ -2,6 +2,7 @@
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
 import { MoveUpRight } from 'lucide-react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { GENERAL_INFO, SOCIAL_LINKS } from '@/lib/data';
 
@@ -38,9 +39,18 @@ const Navbar = () => {
     return (
         <>
             <div className="sticky top-0 z-[4]">
+                <Link
+                    href="/"
+                    aria-label="Home"
+                    className="absolute top-5 left-5 md:left-10 z-[2] h-12 px-5 flex items-center rounded-full border border-white/10 bg-background/60 backdrop-blur-md font-anton text-2xl tracking-widest hover:text-primary hover:border-primary/40 transition-colors"
+                >
+                    RS<span className="text-primary">.</span>
+                </Link>
                 <button
+                    aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+                    aria-expanded={isMenuOpen}
                     className={cn(
-                        'group size-12 absolute top-5 right-5 md:right-10 z-[2]',
+                        'group size-12 absolute top-5 right-5 md:right-10 z-[2] rounded-full border border-white/10 bg-background/60 backdrop-blur-md transition-colors hover:border-primary/40',
                     )}
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
@@ -118,13 +128,26 @@ const Navbar = () => {
                             </p>
                             <ul className="space-y-3">
                                 {MENU_LINKS.map((link, idx) => (
-                                    <li key={link.name}>
+                                    <li
+                                        key={link.name}
+                                        className={cn(
+                                            'transition-all duration-500',
+                                            isMenuOpen
+                                                ? 'translate-y-0 opacity-100'
+                                                : 'translate-y-6 opacity-0',
+                                        )}
+                                        style={{
+                                            transitionDelay: isMenuOpen
+                                                ? `${350 + idx * 80}ms`
+                                                : '0ms',
+                                        }}
+                                    >
                                         <button
                                             onClick={() => {
                                                 router.push(link.url);
                                                 setIsMenuOpen(false);
                                             }}
-                                            className="group text-xl flex items-center gap-3"
+                                            className="group font-anton text-3xl uppercase flex items-center gap-3 transition-all duration-300 hover:translate-x-2 hover:text-primary"
                                         >
                                             <span
                                                 className={cn(

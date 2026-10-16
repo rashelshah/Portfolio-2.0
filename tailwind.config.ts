@@ -79,6 +79,15 @@ export default {
             transitionDuration: {
                 '7000': '7s',
             },
+            keyframes: {
+                // seamless loop: the gradient is 200% wide, so one full image width = 200%
+                shine: { to: { backgroundPosition: '200% center' } },
+                marquee: { to: { transform: 'translateX(-50%)' } },
+            },
+            animation: {
+                shine: 'shine 6s linear infinite',
+                marquee: 'marquee 30s linear infinite',
+            },
             screens: {
                 xs: '420px',
             },

@@ -37,12 +37,21 @@ const Experiences = () => {
                 <SectionTitle title="MY EXPERIENCE" />
 
                 <div className="group/experiences relative" ref={containerRef}>
-                    <div className="flex flex-col max-md:gap-10">
+                    {/* timeline rail */}
+                    <div
+                        className="absolute left-[7px] top-4 bottom-4 w-px bg-gradient-to-b from-primary/70 via-border to-transparent"
+                        aria-hidden
+                    />
+                    <div className="flex flex-col max-md:gap-4">
                         {MY_EXPERIENCE.map((item, index) => (
                             <div
                                 key={`${item.title}-${index}`}
-                                className="experience-item group leading-none py-5 md:border-b first:!pt-0 last:pb-0 last:border-none md:group-hover/experiences:opacity-30 md:hover:!opacity-100 transition-all opacity-100 md:opacity-100"
+                                className="experience-item group relative pl-10 leading-none py-6 md:group-hover/experiences:opacity-30 md:hover:!opacity-100 transition-opacity duration-300"
                             >
+                                <span
+                                    className="absolute left-0 top-[26px] size-[15px] rounded-full border-2 border-primary bg-background transition-all duration-300 group-hover:bg-primary group-hover:shadow-[0_0_20px_hsl(var(--primary)/0.8)]"
+                                    aria-hidden
+                                />
                                 <div className="flex gap-2 items-baseline text-xl text-muted-foreground font-anton mb-2 uppercase">
                                     {item.company.includes(' · ') ? (
                                         <>
@@ -59,7 +68,7 @@ const Experiences = () => {
                                     <h4 className="text-4xl xs:text-6xl flex gap-4 font-anton transition-all duration-1000 bg-gradient-to-r from-primary to-foreground from-[50%] to-[50%] bg-[length:200%] bg-right bg-clip-text text-transparent group-hover:bg-left mt-3.5 mb-2.5">
                                         {item.title}
                                     </h4>
-                                    <p className="mt-2 text-base text-muted-foreground font-medium">
+                                    <p className="mt-3 inline-block rounded-full border border-border/70 px-3 py-1 text-sm leading-none text-muted-foreground font-medium">
                                         {item.duration}
                                     </p>
                                     {item.description && (
