@@ -123,6 +123,17 @@ const ProjectList = () => {
                                     sizes={`${PREVIEW_W}px`}
                                     className="object-cover object-top"
                                 />
+                                {activeProject.highlight && (
+                                    <div className="absolute bottom-3 left-3 right-3 rounded-xl border border-primary/40 bg-background/85 backdrop-blur-md px-3 py-1.5 flex items-center justify-between shadow-lg">
+                                        <span className="flex items-center gap-1.5 text-xs font-medium text-primary">
+                                            <span className="size-2 rounded-full bg-primary animate-pulse" />
+                                            {activeProject.highlight}
+                                        </span>
+                                        <span className="text-[10px] text-muted-foreground uppercase font-anton tracking-wider">
+                                            Traction
+                                        </span>
+                                    </div>
+                                )}
                             </motion.div>
                         )}
                     </AnimatePresence>

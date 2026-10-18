@@ -101,7 +101,7 @@ const ProjectDetails = ({ project }: Props) => {
                     id="info"
                 >
                     <div className="relative w-full">
-                        <div className="flex flex-wrap items-center gap-x-6 gap-y-4 mx-auto mb-10 max-w-[635px]">
+                        <div className="flex flex-wrap items-center gap-x-6 gap-y-4 mx-auto mb-6 max-w-[635px]">
                             <h1 className="fade-in-later opacity-0 text-4xl md:text-[60px] leading-none font-anton overflow-hidden">
                                 <span className="inline-block">
                                     {project.title}
@@ -134,7 +134,43 @@ const ProjectDetails = ({ project }: Props) => {
                             </div>
                         </div>
 
+                        {project.highlight && (
+                            <div className="fade-in-later opacity-0 max-w-[635px] mx-auto mb-8">
+                                <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3.5 py-1.5 text-xs sm:text-sm font-medium text-primary shadow-[0_0_25px_-3px_hsl(var(--primary)/0.35)]">
+                                    <span className="relative flex size-2">
+                                        <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-75" />
+                                        <span className="relative inline-flex size-2 rounded-full bg-primary" />
+                                    </span>
+                                    {project.highlight}
+                                </span>
+                            </div>
+                        )}
+
                         <div className="max-w-[635px] space-y-7 pb-20 mx-auto">
+                            {project.metrics && project.metrics.length > 0 && (
+                                <div className="fade-in-later">
+                                    <p className="text-muted-foreground font-anton mb-3">
+                                        Impact & Traction
+                                    </p>
+                                    <div className="grid grid-cols-2 gap-4">
+                                        {project.metrics.map((metric) => (
+                                            <div
+                                                key={metric.label}
+                                                className="relative overflow-hidden rounded-2xl border border-primary/30 bg-primary/[0.07] p-5 backdrop-blur-sm transition-all hover:border-primary/60 hover:bg-primary/[0.12]"
+                                            >
+                                                <div className="text-3xl sm:text-5xl font-anton text-primary tracking-wide">
+                                                    {metric.value}
+                                                </div>
+                                                <div className="text-xs sm:text-sm text-foreground/80 uppercase tracking-wider mt-1.5 font-medium">
+                                                    {metric.label}
+                                                </div>
+                                                <div className="absolute top-0 right-0 -mr-4 -mt-4 size-20 rounded-full bg-primary/20 blur-xl pointer-events-none" />
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+
                             <div className="fade-in-later">
                                 <p className="text-muted-foreground font-anton mb-3">
                                     Year

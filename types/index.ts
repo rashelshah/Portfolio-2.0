@@ -15,6 +15,11 @@ export type Variant =
     | 'link'
     | 'no-color';
 
+export interface IProjectMetric {
+    label: string;
+    value: string;
+}
+
 export interface IProject {
     title: string;
     year: number;
@@ -27,4 +32,6 @@ export interface IProject {
     slug: string;
     liveUrl?: string;
     sourceCode?: string;
+    highlight?: string;
+    metrics?: IProjectMetric[];
 }

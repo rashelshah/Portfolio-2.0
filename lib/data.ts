@@ -139,6 +139,85 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
 
+
+     {
+        title: 'FcuK Academia',
+        slug: 'fcukacademia',
+        highlight: '26K+ Visitors · 160K+ Views',
+        metrics: [
+            { label: 'Unique Visitors', value: '26K+' },
+            { label: 'Total Views', value: '160K+' },
+        ],
+        techStack: [
+            'Next.js',
+            'Typescript',
+            'Neon DB',
+            'React',
+            'Render',
+        ],
+
+        images: [
+            '/projects/images/fcuk-1.png',
+            '/projects/images/fcuk-2.png',
+            '/projects/images/fcuk-3.png',
+            '/projects/images/fcuk-4.png',
+        ],
+        sourceCode: '',
+        liveUrl: 'https://www.fcukacademia.in',
+        year: 2025,
+        description: `FCUK Academia is a student-focused platform that centralizes academic schedules, attendance tracking, marks, and performance analytics into a unified, mobile-first experience, helping students manage their academic lives more efficiently.<br/><br/>
+
+<div class="my-5 p-4 sm:p-5 rounded-2xl border border-primary/30 bg-primary/[0.08] backdrop-blur-sm">
+  <div class="flex items-center gap-2 text-primary font-anton text-lg tracking-wide mb-2">
+    <span>🚀</span>
+    <span>PROVEN TRACTION & IMPACT</span>
+  </div>
+  <p class="text-foreground/90 text-base leading-relaxed mb-3">
+    Actively used and trusted across campus, achieving over <strong class="text-primary font-bold">26,000+ unique visitors</strong> and <strong class="text-primary font-bold">160,000+ total views</strong>.
+  </p>
+  <div class="flex flex-wrap gap-2.5 pt-1">
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-semibold border border-primary/30">
+      👥 26,000+ Unique Visitors
+    </span>
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-semibold border border-primary/30">
+      👁️ 160,000+ Total Views
+    </span>
+  </div>
+</div><br/>
+
+Key Features:<br/>
+<ul>
+  <li>📅 Smart Timetable: Access class schedules and organize daily academic activities through a centralized dashboard</li>
+  <li>📊 Academic Performance Analytics: Track marks, monitor academic progress and visualize performance trends</li>
+  <li>🧮 Attendance Calculator: Calculate attendance percentages and determine the classes required to meet attendance criteria</li>
+  <li>🎓 SGPA Calculator: Estimate semester grade point averages using subject-wise marks and credits</li>
+  <li>🗓️ Academic Calendar: Keep track of important academic dates, events and upcoming activities</li>
+  <li>📱 Mobile-First Experience: Navigate academic information through a responsive interface optimized for smartphones</li>
+  <li>🔄 Swipe-Based Navigation: Switch between application sections using intuitive horizontal gestures and smooth transitions</li>
+  <li>📲 Progressive Web App: Access the platform through a PWA experience with installability and offline support where implemented</li>
+  <li>🔐 Secure Student Access: Restrict account access to eligible SRMIST institutional email addresses</li>
+  <li>🎨 Interactive Interface: Experience animated components, intuitive navigation and a distinctive visual design tailored to students</li>
+</ul><br/>
+
+
+
+Technical Highlights:<br/>
+<ul>
+  <li>Built with Next.js and React using a modern, component-based application architecture</li>
+  <li>TypeScript for type safety and maintainable application code</li>
+  <li>Tailwind CSS for responsive styling and consistent UI development</li>
+  <li>Supabase for database integration, authentication and backend services where configured</li>
+  <li>SRM Academia API integration for retrieving relevant academic information from the SRMIST KTR portal</li>
+  <li>Framer Motion for smooth transitions, interactive animations and card-flip effects</li>
+  <li>Lucide React and Material Symbols for consistent iconography</li>
+  <li>Progressive Web App capabilities for installation and an app-like mobile experience</li>
+  <li>Vercel deployment with analytics integration for monitoring application usage and performance</li>
+  <li>Performance-focused navigation using optimized transitions and gesture-based interactions</li>
+</ul><br/>
+
+`,
+    },
+
    {
         title: 'Forge',
         slug: 'forge',
