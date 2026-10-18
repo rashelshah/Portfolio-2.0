@@ -138,16 +138,67 @@ export const MY_STACK = {
 };
 
 export const PROJECTS: IProject[] = [
-    {
-        title: 'FoxlyCod',
-        slug: 'foxlycod',
+
+   {
+        title: 'Forge',
+        slug: 'forge',
         techStack: [
-            'Next.js',
+            'React',
+            'Agentic AI',
+            'RAG',
+            'Python',
             'Typescript',
             'Tailwind CSS',
-            'Motion',
+        ],
+
+        images: [
+            '/projects/images/forge-1.png',
+            '/projects/images/forge-2.png',
+            '/projects/images/forge-3.png',
+            '/projects/images/forge-4.png',
+        ],
+        sourceCode: '',
+        liveUrl: 'https://forge-frontend-se6u.onrender.com',
+        year: 2026,
+        description: `The Operating System for Startup Creation <br/><br/>
+
+Key Features:<br/>
+<ul>
+<li>🚀 Venture Studio Dashboard: Centralized workspace to manage ventures, track progress and organize startup development</li>
+<li>🔬 MVP Architect & Prototype Builder: Turn early-stage ideas into structured MVP plans and product prototypes</li>
+<li>📊 Competitor Intelligence: Analyze competitors, identify market gaps and uncover opportunities for differentiation</li>
+<li>📈 Market Signals: Track emerging trends, market shifts and industry opportunities to support smarter decisions</li>
+<li>🧠 Venture Memory: Preserve research, strategic decisions and insights across ventures for long-term context</li>
+<li>🤖 Venture Copilot: AI-powered assistant that uses venture context to support research, planning and decision-making</li>
+<li>🧪 Validation Lab: Evaluate startup ideas, test assumptions and assess market potential before investing resources</li>
+<li>🎯 Go-To-Market Planning: Organize launch strategies, positioning and customer acquisition plans</li>
+<li>📋 AI Founder Brief: Generate concise strategic summaries with key insights, opportunities and recommended next steps</li>
+<li>⚙️ Venture Operations: Monitor agent activity, manage workflows and configure workspace settings</li>
+</ul><br/>
+
+Technical Highlights:<br/>
+<ul>
+  <li>Built as an AI-powered venture studio platform for startup ideation, research and execution</li>
+  <li>Modular workspace architecture covering venture management, intelligence and operations</li>
+  <li>AI-driven workflows for market research, competitor analysis and venture validation</li>
+  <li>Context-aware AI assistance designed to retain and reuse venture-specific knowledge</li>
+  <li>Interactive dashboard with structured navigation, collapsible sections and dedicated workspaces</li>
+  <li>Integrated tools for research, prototyping, strategic planning and go-to-market execution</li>
+  <li>Deployed on Render</li>
+</ul><br/>
+
+`,
+    },
+
+    {
+        title: 'FoxlyCOD',
+        slug: 'foxlycod',
+        techStack: [
             'Shopify',
-            'Vercel',
+            'Typescript',
+            'Polaris',
+            'React',
+            'Render',
         ],
 
         images: [
@@ -156,31 +207,92 @@ export const PROJECTS: IProject[] = [
             '/projects/images/foxlycod-3.jpg',
             '/projects/images/foxlycod-4.jpg',
         ],
-        sourceCode: 'https://github.com/rashelshah/foxlycod-web',
-        liveUrl: 'https://foxlycod.com',
+        sourceCode: '',
+        liveUrl: 'https://apps.shopify.com/foxly-cod-partial-prepaid',
         year: 2026,
-        description: `The marketing and conversion site for Foxly, a Shopify app that turns cash-on-delivery into paid orders with one branded 1-click order form. Merchants can offer full prepaid with a discount, a partial deposit, or COD with a fee, all with OTP verification, fraud blocking, upsells and multi-pixel tracking at 0% commission. <br/><br/>
+        description: `Foxly COD is a Shopify SaaS platform that helps merchants boost COD conversions with a customizable one-page checkout, partial payments, smart autofill, and streamlined order management.<br/><br/>
 
 Key Features:<br/>
 <ul>
-  <li>🧾 Live Order-Form Demo: Switch themes, bundles and payment options on a working replica of the Shopify form</li>
-  <li>🧮 COD Cost Calculator: Sliders that model RTO losses and the margin recovered with prepaid and partial payments</li>
-  <li>💳 Pricing & Plans: Monthly / yearly toggle with a clear breakdown of orders, SMS and overage per tier</li>
-  <li>⚖️ Comparison Pages: Side-by-side breakdowns against other COD apps</li>
-  <li>📅 Demo Booking: Cal.com booking modal and a floating call-to-action</li>
-  <li>🌍 Built for Global Stores: Multi-language and RTL-ready messaging</li>
+  <li>🛒 One-Page COD Checkout: Streamlined Shopify order form designed to simplify checkout and improve cash-on-delivery conversions</li>
+  <li>🎨 Customizable Form Builder: Personalize checkout layouts, themes, colors, fields and button styles through a seller dashboard</li>
+  <li>📦 Smart Product Bundles: Offer quantity-based bundles and discounts to increase average order value</li>
+  <li>💳 Partial COD Payments: Collect a small upfront payment through supported payment gateways while keeping the remaining balance payable on delivery</li>
+  <li>⚡ Smart Autofill: Automatically populate customer details to speed up checkout for returning customers</li>
+  <li>📊 Order Analytics: Track orders and monitor checkout performance through a centralized dashboard</li>
+  <li>📱 SMS & WhatsApp Integration: Enable customer communication and order updates through messaging integrations</li>
+  <li>📑 Google Sheets Integration: Sync order data with Google Sheets for easier tracking and management</li>
+  <li>💰 Usage-Based Pricing: Commission-based monetization with Shopify app usage charges rather than mandatory recurring subscriptions</li>
+  <li>🌍 Shopify Integration: Designed for merchants looking to simplify COD order management and optimize their checkout experience</li>
 </ul><br/>
+
 
 Technical Highlights:<br/>
 <ul>
-  <li>Built with Next.js App Router, React 19, TypeScript and Tailwind CSS 4</li>
-  <li>Smooth section reveals and micro-interactions using Motion</li>
-  <li>SEO-first setup: per-page metadata, sitemap, robots and generated Open Graph images</li>
-  <li>Content-driven pages powered by typed data modules for plans, FAQs and comparisons</li>
-  <li>Deployed on Vercel</li>
+<li>Built with React for the embedded merchant dashboard and Node.js with Express.js for backend services</li>
+<li>Integrated with Shopify APIs to support product data, order workflows and merchant operations</li>
+<li>Supabase PostgreSQL for structured data storage and application management</li>
+<li>Modular architecture with dedicated data models for customers, form settings and order logs</li>
+<li>Payment gateway integrations to support advance payments for partial COD orders</li>
+<li>OAuth-based Google Sheets integration for synchronizing order information</li>
+<li>Designed for deployment with Vercel for the frontend and Render for backend services</li>
 </ul><br/>
 `,
     },
+
+
+     {
+        title: 'ProdSync',
+        slug: 'prodsync',
+        techStack: [
+            'React',
+            'Typescript',
+            'Node.js',
+            'Express.js',
+            'Supabase'
+        ],
+
+        images: [
+            '/projects/images/prodsync-1.png',
+            '/projects/images/prodsync-2.png',
+            '/projects/images/prodsync-3.png',
+            '/projects/images/prodsync-4.png',
+        ],
+        sourceCode: '',
+        liveUrl: 'https://www.prodsync.in',
+        year: 2025,
+        description: `ProdSync is a SaaS platform designed to streamline operational workflows through real-time tracking, centralized data management, and interactive dashboards, enabling teams to improve visibility, coordination, and operational efficiency. <br/><br/>
+
+Key Features:<br/>
+<ul>
+  <li>📦 Centralized Product Management: Manage product and operational data through a unified, intuitive dashboard</li>
+  <li>🚚 Real-Time Transport Tracking: Monitor transportation activities and visualize shipment locations on an interactive map</li>
+  <li>🗺️ Interactive Tracking Map: Visualize transport movements and location updates using Mapbox-powered mapping</li>
+  <li>⚡ Live Data Synchronization: Keep tracking information updated through real-time communication and periodic data refreshes</li>
+  <li>📊 Operational Visibility: Access organized information about transport activities to improve monitoring and coordination</li>
+  <li>🔄 Dynamic Dashboard: Interact with responsive interfaces designed to simplify operational workflows and data navigation</li>
+  <li>🔔 Instant Feedback: Receive contextual notifications for application actions and operational updates</li>
+  <li>📱 Responsive User Interface: Access key features through a modern interface designed for a seamless user experience</li>
+</ul><br/>
+
+
+Technical Highlights:<br/>
+<ul>
+  <li>Built with React, TypeScript and Vite for a modern, component-based frontend architecture</li>
+  <li>Node.js and TypeScript backend for server-side logic and API development</li>
+  <li>Supabase integration for database connectivity and application data management</li>
+  <li>Socket.IO for real-time, bidirectional communication between the client and server</li>
+  <li>Mapbox GL integration for interactive maps and transport location visualization</li>
+  <li>TanStack React Query for asynchronous data fetching, caching and server-state management</li>
+  <li>React Router for client-side navigation and structured application routing</li>
+  <li>Framer Motion and WebGL-based visual effects for interactive UI elements and animations</li>
+  <li>Error boundary implementation for improved frontend error handling and application resilience</li>
+</ul><br/>
+`,
+    },
+
+
+
     {
         title: 'Crypton AI',
         slug: 'crypton-ai',
@@ -338,135 +450,6 @@ Technical Highlights:<br/>
   <li>Deployed on Vercel for seamless hosting and CI/CD</li>
 </ul><br/>
 `,
-    },
-
-    {
-        title: 'Newsify',
-        slug: 'newsify',
-        techStack: ['React', 'Javascript', 'HTML', 'CSS', 'API'],
-
-        images: [
-            '/projects/images/newsify-1.png',
-            '/projects/images/newsify-2.png',
-            '/projects/images/newsify-3.png',
-            '/projects/images/newsify-4.png',
-        ],
-        sourceCode: 'https://github.com/rashelshah/Newsify.git',
-        liveUrl: '',
-        year: 2024,
-        description: `A sleek and user-friendly news website built with React that delivers real-time news using external APIs. It showcases dynamic content rendering and efficient API integration—all on the frontend. <br/><br/>
-        Key Features:<br/>
-        <ul>  
-  <li>📰 Real-Time News: Fetches and displays the latest news from external APIs</li>  
-  <li>📂 Categorized Content: Browse news by different categories for easy access</li>  
-  <li>🔍 Search Functionality: Quickly find news articles by keywords</li>  
-  <li>⚡ Fast & Responsive: Smooth navigation with a clean and modern interface</li>  
-  <li>🌐 Fully Frontend-Based: Handles all data fetching and rendering on the client side</li>  
-</ul>  
-
-
-`,
-    },
-    {
-        title: 'BlogHaven',
-        slug: 'bloghaven',
-        techStack: [
-            'React.js',
-            'Typescript',
-            'Tailwind CSS',
-            'MongoDB',
-            'Node.js',
-            'Express.js',
-        ],
-
-        images: [
-            '/projects/images/bloghaven-1.png',
-            '/projects/images/bloghaven-2.png',
-            '/projects/images/bloghaven-3.png',
-            '/projects/images/bloghaven-4.png',
-            '/projects/images/bloghaven-5.png',
-            '/projects/images/bloghaven-6.png',
-            '/projects/images/bloghaven-7.png',
-            '/projects/images/bloghaven-8.png',
-        ],
-        sourceCode: 'https://github.com/rashelshah/BlogHaven.git',
-        liveUrl: 'https://blog-haven-orcin.vercel.app',
-        year: 2025,
-        description: `BlogHaven is a modern blogging platform where users can create and share articles, with content curated by admins for quality and relevance. It features trending blogs, search functionality, and a seamless experience across devices using the MERN stack. <br/><br/>
-
-            Key Features:<br/>
-            <ul>
-  <li>✍️ Blog Submission: Users can create and submit blogs for admin approval</li>
-  <li>✅ Admin Moderation: Approve, reject, hide, or delete blog posts to maintain quality</li>
-  <li>🔥 Trending Blogs: Highlights popular articles based on likes and comments</li>
-  <li>🔍 Search & Filter: Easily find blogs by keywords or categories</li>
-  <li>📱 Responsive Design: Optimized for both mobile and desktop devices</li>
-  <li>🔒 Secure Authentication: Signup and login using JWT for safe user management</li>
-</ul>
-            `,
-    },
-    {
-        title: 'Dogify',
-        slug: 'dogify',
-        techStack: ['React', 'Typescript', 'Javascript', 'Bootstrap', 'CSS'],
-
-        images: [
-            '/projects/images/dogify-1.png',
-            '/projects/images/dogify-2.png',
-            '/projects/images/dogify-3.png',
-            '/projects/images/dogify-4.png',
-            '/projects/images/dogify-5.png',
-        ],
-        sourceCode: 'https://github.com/rashelshah/Dogify.git',
-        liveUrl: 'https://dogify-rho.vercel.app',
-        year: 2024,
-        description: `Dogify helps you identify your dog’s breed by simply uploading its photo and explore a marketplace for all dog-related products in one place. Smart, easy, and made for dog lovers! <br/><br/>
-
-            Key Features:<br/>
-            <ul>
-  <li>🐶 Breed Identification: Upload photos to instantly recognize your dog’s breed</li>
-  <li>🛍️ Marketplace: Discover a variety of dog-related products for sale</li>
-  <li>🔍 Search & Filter: Find specific items by category or keyword</li>
-  <li>📱 Responsive Design: Accessible on various devices including smartphones and tablets</li>
-  <li>🔒 Secure Login: Sign up and log in securely using JWT tokens</li>
-</ul>
-            `,
-        role: ``,
-    },
-    {
-        title: 'iBook',
-        slug: 'ibook',
-        techStack: [
-            'React',
-            'Node.js',
-            'Express.js',
-            'MongoDB',
-            'JWT',
-            'Tailwind CSS',
-        ],
-
-        images: [
-            '/projects/images/ibook-1.png',
-            '/projects/images/ibook-2.png',
-            '/projects/images/ibook-3.png',
-        ],
-        sourceCode: 'https://github.com/rashelshah/iBook.git',
-        liveUrl: '',
-        year: 2024,
-        description: `A simple and efficient notes-taking website to create, organize, and access your notes anytime.
-Keep your thoughts, ideas, and important information neatly saved in one place with ease.<br/><br/>
-
-            Key Features:<br/>
-            <ul>
-            <li>📝 Create & Edit Notes: Quickly jot down and update your notes</li>
-            <li>📂 Organize Notes: Sort notes by categories or tags for easy access</li>
-            <li>🔍 Search Functionality: Find notes instantly using keywords</li>
-            <li>☁️ Cloud Sync: Access your notes from any device seamlessly</li>
-            <li>🔒 Secure Storage: Keep your notes safe and private</li>
-            </ul>
-
-`,
-        role: ``,
     },
 ];
 

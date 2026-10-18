@@ -114,20 +114,18 @@ const Banner = () => {
                     </div>
                 </div>
 
-                <div className="hero-col md:absolute bottom-[10%] right-[4%] max-md:mt-[20vh] flex max-md:w-full max-md:justify-between md:flex-col gap-3 md:gap-4 text-center md:text-right">
+                <div className="hero-col md:absolute bottom-[10%] right-[4%] max-md:mt-[20vh] flex max-md:w-full max-md:justify-between md:flex-col gap-4 md:gap-8 text-center md:text-right">
                     {STATS.map(({ icon, label }) => (
                         <div
                             key={label}
-                            className="slide-up-and-fade group flex-1"
+                            className="slide-up-and-fade flex-1"
                         >
-                            <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-3 py-3 md:px-5 md:py-4 transition-all duration-300 md:hover:-translate-x-2 hover:border-primary/50 hover:bg-primary/[0.06]">
-                                <h5 className="text-[36px] sm:text-[40px] md:text-4xl font-anton text-primary mb-1 md:mb-1.5 leading-none transition-transform duration-300 group-hover:scale-110">
-                                    {icon}
-                                </h5>
-                                <p className="text-muted-foreground text-[14px] xs:text-[15px] sm:text-base leading-tight mt-2 md:mt-0 max-w-[110px] sm:max-w-none mx-auto md:max-w-none md:mx-0">
-                                    {label}
-                                </p>
-                            </div>
+                            <h5 className="text-[36px] sm:text-[40px] md:text-4xl font-anton text-primary mb-1 md:mb-1.5 leading-none">
+                                {icon}
+                            </h5>
+                            <p className="text-muted-foreground text-[14px] xs:text-[15px] sm:text-base leading-tight mt-2 md:mt-0 max-w-[110px] sm:max-w-none mx-auto md:max-w-none md:mx-0">
+                                {label}
+                            </p>
                         </div>
                     ))}
                 </div>
